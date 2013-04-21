@@ -137,6 +137,7 @@ keyword = "DiffOrig",
   "ea|ear|earl|earli|earlie|earlier",
   "ec|ech|echo",
   "echoe|echoer|echoerr",
+  "echoh|echohl",
   "echom|echoms|echomsg",
   "echon",
   "el|els|else",
@@ -809,7 +810,7 @@ predef_func = "abs|acos|add|and|append",
   "winrestview|winsaveview|winwidth|writefile"
 
 # For things like <leader>, <c-r> and <cr>
-atom = '<[[:alpha:]]+>'
+atom = '<[[:word:]]+>'
 
 regexp = `([^[:alpha:]])[[:word:]]*\1[[:word:]]*\1`
 
@@ -817,7 +818,8 @@ symbol = "==|==#|==?|!=|!=#|!=?",
   ">=|>=#|>=?|<=|<=#|<=?",
   "=~|=~#|=~?|!~|!~#|!~?",
   ">|>#|>?|<|<#|<?",
-  "=|\|\||&&|+|-|."
+  "=|\|\||&&|+|-|.",
+  "(|)|[|]|{|}"
 
 function = '(?=function!?[[:blank:]]*)[[:word:]]*'
 
