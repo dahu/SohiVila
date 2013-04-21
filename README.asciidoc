@@ -1,0 +1,20 @@
+GNU source-highlight Vim lang
+-------------------------------
+
+I use the asciidoc blogger backend. It relies on html4 output which
+seems to be incompatible with pygments. GNU source-highlight works
+though, and all it needed was a syntax file for Vim. This tiny repo
+provides that.
+
+It seems that the installation of custom syntax files in GNU
+source-highlight is a bit archaic. I couldn't find a simple
+solution, at any rate.
+
+.My current hack approach is:
+
+1. ++sudo ln -s /path/to/vim.lang /usr/share/source-highlight/vim.lang++
+2. ++sudo sh -c "cat lang.map >> /usr/share/source-highlight/lang.map"++
+
+NOTE: Remember to use `>>` and not `>` in the second command.
+
+If you know of a better way to do this, please let me know.
